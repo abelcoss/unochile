@@ -1,0 +1,131 @@
+/*{border:solid}*/
+main{
+  display: grid;
+  grid-gap:5px;
+ }
+/* para que se esciba inline
+main > * {
+    display: flex;
+} */
+
+body{color:white;
+  margin: 0;
+  font-family: 'Futura', sans-serif;
+  font-size:15px;
+}
+
+main{
+  background-image:url("images/background.png");
+  background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.logo img{max-height: 100px;
+  max-width: 90vw;
+}
+
+.logo{padding: 25px;
+  max-height: 100px;
+}
+
+
+.contenido{padding: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+margin-bottom: 50px;
+margin-top: 50px;
+}
+
+
+.contenido h1{
+max-width: 600px;
+font-size: 20px;
+font-weight:lighter;}
+
+.paises{
+  height: 300px;
+}
+
+
+.wrapper {max-width: 600px;
+    text-align: center;
+}
+
+.botone{
+  background-color: #FFFFFF;
+  border: none;
+  color: #0077B3;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 5px 5px 6px #0077B3;
+}
+
+
+
+.formulario{color:#0077B3;
+  background-color: white;
+  box-shadow: 1px 5px 6px grey;
+  padding: 30px;
+}
+
+
+.formulario h1{font-size: 20px;
+  font-weight: lighter;
+}
+
+function formSubmit() {
+    document.forms["myForm"].submit();
+}
+
+.footer{height: 95px;
+  color:#0077B3;
+  background-color: white;
+}
+
+
+
+
+/*desktop*/
+@media(min-width: 600px){
+main{
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 100px 1fr ;
+ }
+
+.logo{
+  grid-row: 1/2;
+}
+
+  .contenido{
+  grid-column: 1/2;
+  grid-row: 2/3;
+    }
+
+  .formulario{
+  grid-column: 2/3;
+  grid-row: 2/3;
+    }
+
+.formulario{
+min-width: 400px;
+  max-width: 450px;
+  border-radius: 10px;
+  padding: 50px;
+  height: 600px;
+}
+
+
+
+
+
+}
+
+.footer{ padding: 25px;
+  max-height: 100px;
+}
